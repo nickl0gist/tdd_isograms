@@ -12,6 +12,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testLowercaseIsogram() {
         IsogramChecker iso = new IsogramChecker();
@@ -19,6 +20,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testNotIsogram() {
         IsogramChecker iso = new IsogramChecker();
@@ -26,6 +28,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testMediumLongIsogram() {
         IsogramChecker iso = new IsogramChecker();
@@ -33,6 +36,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testCaseInsensitive() {
         IsogramChecker iso = new IsogramChecker();
@@ -40,6 +44,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testIsogramWithHyphen() {
         IsogramChecker iso = new IsogramChecker();
@@ -47,6 +52,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testIsogramWithDuplicatedHyphen() {
         IsogramChecker iso = new IsogramChecker();
@@ -54,6 +60,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testMadeUpNameThatIsAnIsogram() {
         IsogramChecker iso = new IsogramChecker();
@@ -61,6 +68,7 @@ public class IsogramCheckerTest {
     }
 
 
+    @Ignore
     @Test
     public void testDuplicatedCharacterInTheMiddleIsNotIsogram() {
         IsogramChecker iso = new IsogramChecker();
