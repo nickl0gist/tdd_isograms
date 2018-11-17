@@ -1,42 +1,44 @@
 # Isogram
 
-Determine if a word or phrase is an isogram.
+Sprawdź czy słowo lub fraza jest isogramem.
 
-An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter, however spaces and hyphens are allowed to appear multiple times.
+Isogram (znany również jako "nieszablonowe słowo") jest słowem lub frazą pozbawioną powtorzających się liter, 
+choć spacje lub myślniki mogą występować wielokrotnie.
 
-Examples of isograms:
+Przykłady angielskich isogramów:
 
 - lumberjacks
 - background
 - downstream
 - six-year-old
 
-The word *isograms*, however, is not an isogram, because the s repeats.
+Zauważ, że słowo *isograms*, nie jest isogramem ze względu na powtarzającą się literę s.
 
-# Java Tips
+# Wskazówki
 
-If you find that `testWorksWithGermanLetters` fails even though you think you've implemented it correctly,
-this could be because of the [JVM encoding](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_61/rzaha/international.htm). 
-Try setting the `JAVA_TOOL_OPTIONS` environment variable to `-Dfile.encoding=UTF8` to fix this.
-- To set an environment variable on Windows:
-    1. Go to Computer -> Properties -> Advanced System Settings
-    2. Add a new environment variable
+Jeśli dojdziesz do wniosku, że test o nazwie `testWorksWithGermanLetters` 
+nie wykonuje się poprawnie mimo dobrej implementacji, być może dzieje się to za sprawą
+JVM encoding](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_61/rzaha/international.htm). 
+Ustaw zmienną środowiskową `JAVA_TOOL_OPTIONS` na `-Dfile.encoding=UTF8` aby pozbyć się tego problemu.
+- Aby ustawić zmienną środowiskową w systemie Windows:
+    1. Znajdź Komputer -> Ustawienia -> Zaawansowane ustawienia systemowe
+    2. Dodaj nową zmienną środowiskową
+    
+- [Aby ustawić zmienną środowiskową na Macu](http://blog.lidalia.org.uk/2011/04/setting-default-java-file-encoding-to.html)
 
-- [To set an environment variable on a mac](http://blog.lidalia.org.uk/2011/04/setting-default-java-file-encoding-to.html)
+- [Aby ustawić zmienną środowiskową na Linuxie](https://unix.stackexchange.com/questions/151733/where-can-i-set-global-java-options)
 
-- [To set an environment variable on linux](https://unix.stackexchange.com/questions/151733/where-can-i-set-global-java-options)
+# Uruchomienie testów
 
-# Running the tests
-
-You can run all the tests for an exercise by entering
+Możesz wywołać wszystkie testy pisząć następującą komendę
 
 ```sh
 $ gradle test
 ```
 
-in your terminal.
+w konsoli.
 
-## Source
+## Źródło
 
 Wikipedia [https://en.wikipedia.org/wiki/Isogram](https://en.wikipedia.org/wiki/Isogram)
 
