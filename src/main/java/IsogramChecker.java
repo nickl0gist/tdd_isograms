@@ -4,7 +4,7 @@ import java.util.Set;
 public class IsogramChecker {
 
     public boolean isIsogram(String input) {
-        input = input.replace(" ", "").replace("-","");
+        input = input.replaceAll(" -| ", "");
         input = input.toLowerCase();
 
         Set<Character> set = new HashSet<>();
